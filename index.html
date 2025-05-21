@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoohoo RAD Day!!!</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, 
+        red, orange, yellow, green, blue, indigo, violet, red);
+      background-size: 1600% 1600%;
+      animation: rainbow 10s linear infinite;
+    }
+
+    .spinner {
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      animation: spin 3s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner">Yoohoo RAD Day!!!</div>
+</body>
+</html>
